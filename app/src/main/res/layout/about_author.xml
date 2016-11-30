@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--要不我放个校徽，作者头像啥的？-->
+    <!--这里是标题栏内容-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/list_content">
+
+        <!--该控件相对于父控件左对齐-->
+        <Button
+            android:layout_alignParentLeft="true"
+            android:id="@+id/about_author_Return"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_framework"
+            android:text="返回"
+            android:textSize="25dp"
+            android:onClick="about_author_Return_OnClickListener" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="关于日记本"
+            android:gravity="center"
+            android:textSize="25dp"/>
+    </RelativeLayout>
+
+    <!--这里是标题栏以外的正式内容-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/about_author_Photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="这是一个简单的小日记APP"
+            android:textSize="18dp"/>
+
+        <TextView
+            android:id="@+id/about_author_Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/about_author_Photo"
+            android:layout_below="@+id/about_author_Photo"
+            android:text="周杉杉"
+            android:textSize="18dp"/>
+
+        <TextView
+            android:id="@+id/about_author_school"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/about_author_Name"
+            android:layout_below="@+id/about_author_Name"
+            android:text="暨南大学珠海校区"
+            android:textSize="18dp"/>
+
+        <TextView
+            android:id="@+id/about_author_QQNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/about_author_school"
+            android:layout_below="@+id/about_author_school"
+            android:text="联系QQ：921947503"
+            android:textSize="18dp"/>
+
+        <TextView
+            android:id="@+id/about_author_Email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/about_author_QQNumber"
+            android:layout_below="@+id/about_author_QQNumber"
+            android:text="联系邮箱:m13192219230@163.com"
+            android:textSize="18dp"/>
+
+        ></RelativeLayout>
+
+</LinearLayout>

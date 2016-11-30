@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- 控件里面的颜色，因为是是EditText，里面设置#ffffff 或者其他-->
+    <solid android:color="#ffffff"/>
+
+    <!-- 控件外面边框的颜色和宽度  有一个背景图边框，所以这里是透明色 透明不等于不设置???-->
+    <stroke
+        android:width="25dp"
+        android:color="#00000000"/>
+
+</shape>

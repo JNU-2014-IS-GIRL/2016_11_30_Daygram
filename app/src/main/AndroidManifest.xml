@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.zhuwo.daygram">
+
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" >
+
+        <!--欢迎界面-->
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!--原初始界面：输入密码页面-->
+        <activity
+            android:name=".InputPassword"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!--显示已经写的日记列表-->
+        <activity
+            android:name=".ItemActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!--对于列表项目进行操作，可能是新建，可能是更改-->
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!--有关于作者信息的页面-->
+        <activity
+            android:name=".AboutAuthor"
+            android:screenOrientation="portrait" >
+        </activity>
+
+    </application>
+
+</manifest>
